@@ -24,6 +24,7 @@ function App() {
           <h3>Contact Us</h3>
           <h3>Services</h3>
           <h3>Portfolio</h3>
+          <button><h3 class="sign-in">Sign in</h3></button>
         </div>
       </>
     );
