@@ -33,13 +33,9 @@ function App() {
     return <h1 className="develco">DevelCo</h1>;
   }
 
-  function Clicked() {
-    console.log("clicked");
-  }
-
   function Button() {
     return (
-      <button className="button" onClick={Clicked}>
+      <button className="button">
         Let's Explore
       </button>
     );
@@ -68,6 +64,8 @@ function App() {
         <Navcenter />
       </div>
       <div className="Body">
+      <video src="https://videos.pexels.com/video-files/3130284/3130284-uhd_3840_2160_30fps.mp4" className="Video" autoPlay muted loop></video>
+        <h1 className="brandtext">YOUR IMAGINATION, OUR CREATION</h1>
         <Develco />
         <h1 className="tagline">The Developers Company</h1>
         <p className="desc">
