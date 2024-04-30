@@ -20,7 +20,6 @@
 
 .Body{
   width: 100%;
-  
   margin-top: 9vh;
   background-color: #040909;
 }
@@ -133,7 +132,7 @@
   width: 29vw;
   height: 62vh;
   margin: 3vw 0 3vw 3vw;
-  background-color: #5BD34C;
+  background-color: #EEEEEE;
   transition-duration: 1s;
 }
 
