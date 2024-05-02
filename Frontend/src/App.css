@@ -1,9 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 
+
+
+@media screen and (min-width: 968px) {
+  :root {
+    --normal-font-size: 1rem;
+  }
+}
+
+
+*,
+*:after,
+*:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.card__container {
+  padding: 10vw 3.7vw 5vw 3.7vw;
+}
+
+.card__bx {
+  --dark-color: #2e2e2e;
+  --dark-alt-color: #777777;
+  --white-color: #ffffff;
+  --button-color: #333333;
+  --transition: 0.4s ease-in-out;
+
+  font-family: inherit;
+  height: 350px;
+  width: 300px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--dark-color);
+  transition: var(--transition);
+  overflow: hidden; 
+
+  box-shadow: 
+    10px 10px 0 var(--clr), 
+    -10px -10px 0 var(--clr), 
+    10px 10px 0 var(--clr), 
+    -10px -10px 0 var(--clr); 
+
+  &:hover {
+    box-shadow: none; 
+  }
+}
+
+.card__bx .card__data {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+  padding: 0 20px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.card__bx .card__data .card__icon {
+  height: 80px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: var(--text-color);
+  background-color: var(--dark-color);
+  transition: var(--transition);
+}
+.card__bx .card__data .card__icon {
+  color: var(--clr);
+  box-shadow: 0 0 0 4px var(--dark-color), 0 0 0 6px var(--clr);
+}
+.card__bx:hover .card__data .card__icon {
+  color: var(--dark-color);
+  background-color: var(--clr);
+  box-shadow: 0 0 0 4px var(--dark-color), 0 0 0 300px var(--clr);
+}
+.card__bx .card__data .card__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.card__bx .card__data h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--white-color);
+  transition: var(--transition);
+}
+.card__bx:hover .card__data h3 {
+  color: var(--dark-color);
+  transition: var(--transition);
+}
+.card__bx .card__data p {
+  font-size: 0.9rem;
+  color: var(--dark-alt-color);
+  transition: var(--transition);
+}
+.card__bx:hover .card__data p {
+  color: var(--dark-color);
+  transition: var(--transition);
+}
+.card__bx .card__data a {
+  position: relative;
+  display: inline-flex;
+  padding: 8px 15px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  border: 2px solid var(--clr);
+  color: var(--dark-color);
+  background-color: var(--clr);
+  transition: var(--transition);
+}
+.card__bx:hover .card__data a {
+  color: var(--clr);
+  background-color: var(--dark-color);
+}
+.card__bx:hover .card__data a:hover {
+  border-color: var(--dark-color);
+  color: var(--dark-color);
+  background-color: var(--clr);
+}
 
 *{
   margin: 0;
   padding: 0;
   font-family: 'Mukta';
+}
+
+.page1, .page2, .page3, .page4{
+  width: 100%;
+  height: 100vh;
+  border-bottom: 2px solid #EEEEEE;
 }
 
 .Navbar{
@@ -52,7 +189,7 @@
 
 .Video{
   width: 100vw;
-  height: 91vh;
+  height: 100vh;
   object-fit: cover;
 }
 
@@ -84,6 +221,12 @@
   font-size: 3vh;
   margin-left: 2vw;
   margin-top: 5vh;
+  border: none;
+
+  &:hover{
+    background-color: #EEEEEE;
+    color: #222831;
+  }
 }
 
 .tagline{
@@ -92,7 +235,7 @@
   color: #EEEEEE;
   font-family: 'Bebas Neue';
   position: absolute;
-  top: 125vh;
+  top: 132.5vh;
 }
 
 .brandtext{
@@ -108,32 +251,22 @@
 }
 
 .service-heading{
-  background-color: #222831;
-  margin-top: 12vh;
+  font-size: 3vw;
   color: #EEEEEE;
-  justify-content: center;
-  display: flex;
+  padding-left: 5vh;
+  border-bottom: 2px solid #EEEEEE;
+}
+
+.about-heading{
+  font-size: 3vw;
+  color: #EEEEEE;
+  padding-left: 5vh;
+  border-bottom: 2px solid #EEEEEE;
 }
 
 .card-parent{
   display: flex;
-}
-
-.card-child{
-  height: 60vh;
-  margin: 4vw 0 4vw 4vw;
-  border-radius: 2vw;
-  width: 28vw;
-  background-color: #222831;
-  box-shadow: 0 8px 8px #222831;
-}
-
-.card-child:hover{
-  width: 29vw;
-  height: 62vh;
-  margin: 3vw 0 3vw 3vw;
-  background-color: #EEEEEE;
-  transition-duration: 1s;
+  justify-content: center;
 }
 
 .showmore{
@@ -144,11 +277,14 @@
   border-radius: 2vw;
   font-size: 2.8vh;
   margin: 0 42vw;
-}
+  border: none;
 
-.showmore:hover{
-  width: 17%;
+  &:hover{
+    background-color: #EEEEEE;
+    color: #222831;
+    width: 17%;
   transition-duration: 1s;
+  }
 }
 
 ::-webkit-scrollbar{
@@ -157,5 +293,5 @@
 
 .footer{
   height: 40vh;
-  background-color: #31363F;
+  background-color: #040909;
 }
