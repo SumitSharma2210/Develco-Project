@@ -15,6 +15,24 @@ function App() {
     );
   }
 
+
+
+  function Navcenter() {
+    return (
+      <>
+        <div className="Navcenter">
+          <h3>Home</h3>
+          <h3>About Us</h3>
+          <h3>Contact Us</h3>
+          <h3>Services</h3>
+          <h3>Portfolio</h3>
+          <button><h3 class="sign-in">Sign in</h3></button>
+        </div>
+      </>
+    );
+  }
+
+
   function Develco() {
     return <h1 className="develco">DevelCo</h1>;
   }

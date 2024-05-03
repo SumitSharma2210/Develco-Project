@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 
 
@@ -132,10 +133,14 @@
 }
 
 *{
+
+* {
+
   margin: 0;
   padding: 0;
-  font-family: 'Mukta';
+  font-family: "Mukta";
 }
+
 
 .page1, .page2, .page3, .page4{
   width: 100%;
@@ -145,27 +150,49 @@
 
 .Navbar{
   background-color: #040909;
+
+.Navbar {
+  background-color: #31363f;
+
   width: 100%;
   height: 9vh;
   display: flex;
-  color: #EEEEEE;
+  color: #eeeeee;
   font-weight: 500;
   position: fixed;
   z-index: 1000;
   top: 0;
 }
 
-.Body{
-  width: 100%;
-  margin-top: 9vh;
-  background-color: #040909;
+.sign-in{
+  margin-left: auto;
+  background-color: #31363f;  
+  color: #eeeeee;;
+  border: 0.5px solid white;
+  padding: 10px 30px ;
 }
 
-.footer{
+.sign-in:hover {
+ background-color: aliceblue;
+ color:rgb(77, 74, 74);
+}
+
+
+.Body {
+  width: 100%;
+  margin-top: 9vh;
+
+  background-color: #040909;
+
+  background-color: #76abae;
+
+}
+
+.footer {
   background-color: bisque;
 }
 
-.Navleft{
+.Navleft {
   width: 20%;
   height: 100%;
   display: flex;
@@ -173,12 +200,12 @@
   justify-content: center;
 }
 
-.Navleft a{
-  color: #EEEEEE;
+.Navleft a {
+  color: #eeeeee;
   text-decoration: none;
 }
 
-.Navcenter{
+.Navcenter {
   width: 60%;
   height: 100%;
   display: flex;
@@ -186,6 +213,7 @@
   justify-content: center;
   align-items: center;
 }
+
 
 .Video{
   width: 100vw;
@@ -196,31 +224,40 @@
 
 .develco{
   color: #EEEEEE;
+
+.develco {
+  color: #eeeeee;
+
   font-size: 20vh;
   padding-left: 2vw;
   padding-top: 5vh;
-  font-family: 'Bebas Neue';
+  padding-bottom: 0;
+  margin-bottom: 0;
+  font-family: "Bebas Neue";
 }
 
-.desc{
+.desc {
   width: 70%;
-  color: #EEEEEE;
-  font-size: 2.2vh;
+  color: #eeeeee;
+  font-size: 2.4vh;
+  font-weight: 500;
   padding-left: 2vw;
   line-height: 3vh;
+  padding-top: 2vh;
 }
 
-.button{
+.button {
   background-color: #222831;
-  font-family: 'Mukta';
+  font-family: "Mukta";
   font-weight: 900;
   width: 15%;
-  height: 7vh;
-  color: #EEEEEE;
+  height: 8vh;
+  color: #eeeeee;
   border-radius: 2vh;
   font-size: 3vh;
   margin-left: 2vw;
   margin-top: 5vh;
+
   border: none;
 
   &:hover{
@@ -272,11 +309,55 @@
 .showmore{
   background-color: #222831;
   color: #EEEEEE;
+
+}
+
+.tagline {
+  padding-left: 5vh;
+  font-size: 6vh;
+  position: absolute;
+  top: 33vh;
+  color: #222831;
+  font-family: "Bebas Neue";
+}
+
+.service-heading {
+  background-color: #222831;
+  margin-top: 12vh;
+  color: #eeeeee;
+  justify-content: center;
+  display: flex;
+}
+
+.card-parent {
+  display: flex;
+}
+
+.card-child {
+  height: 60vh;
+  margin: 4vw 0 4vw 4vw;
+  border-radius: 2vw;
+  width: 28vw;
+  background-color: #222831;
+  box-shadow: 0 8px 8px #eeeeee;
+}
+
+.card-child:hover {
+  width: 29vw;
+  height: 62vh;
+  margin: 3vw 0 3vw 3vw;
+}
+
+.showmore {
+  background-color: #222831;
+  color: #eeeeee;
+
   width: 15%;
   height: 5vh;
   border-radius: 2vw;
   font-size: 2.8vh;
   margin: 0 42vw;
+
   border: none;
 
   &:hover{
@@ -295,3 +376,10 @@
   height: 40vh;
   background-color: #040909;
 }
+
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
